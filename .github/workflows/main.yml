@@ -23,7 +23,8 @@ jobs:
       run: helm package . -d manifests/
     - name: Lint release
       uses: docker://replicated/vendor-cli:latest
-      run: release lint --yaml-dir manifests/ --fail-on warn
+      with:
+        args: release lint --yaml-dir manifests/ --fail-on warn
     - name: Create a release on Channel associated with the branch
       uses: docker://replicated/vendor-cli:latest
       with:
