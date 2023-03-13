@@ -4,7 +4,7 @@ metadata:
   name: app-slug
 spec:
   title: Withdrawal genie
-  icon: https://raw.githubusercontent.com/cncf/artwork/master/projects/kubernetes/icon/color/kubernetes-icon-color.png
+  icon: https://cdn-icons-png.flaticon.com/512/5024/5024665.png
   statusInformers:
     - deployment/example-nginx
   ports:
