@@ -21,7 +21,8 @@ jobs:
       id: get_branch
     - name: Get branch name
       run: helm package . -d manifests/
-    -name: Lint release
+    - name: Lint release
+      uses: docker://replicated/vendor-cli:latest
       run: release lint --yaml-dir manifests/ --fail-on warn
     - name: Create a release on Channel associated with the branch
       uses: docker://replicated/vendor-cli:latest
