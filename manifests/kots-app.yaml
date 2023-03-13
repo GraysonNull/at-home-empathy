@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: app-slug
 spec:
-  title: Withdrawal genie
+  title: Withdrawal Genius
   icon: https://cdn-icons-png.flaticon.com/512/5024/5024665.png
   statusInformers:
     - deployment/example-nginx
