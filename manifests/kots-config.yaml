@@ -25,6 +25,9 @@ spec:
           title: New Required Field
           type: text
           required: true
+    - name: database_password
+      type: text
+      title: Database Password
     - name: replicas
       title: How many replicas of the app should be deployed?
       items:

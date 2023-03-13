@@ -6,5 +6,5 @@ spec:
   rules:
   - name: nonexistent-status-informer-object
     level: "off"
-  - name: application-statusInformers
-    level: "error"
+  - name: config-option-password-type
+    level: "off"
